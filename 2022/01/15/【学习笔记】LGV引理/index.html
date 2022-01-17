@@ -28,11 +28,14 @@
 <meta property="og:site_name" content="demonlover的博客">
 <meta property="og:description" content="本来没打算写的, 但是感觉老容易忘, 就还是写一下吧.">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/16/7tEmng.md.jpg">
+<meta property="og:image" content="https://s4.ax1x.com/2022/01/16/7tE390.md.jpg">
 <meta property="article:published_time" content="2022-01-14T17:11:24.000Z">
-<meta property="article:modified_time" content="2022-01-15T17:23:17.665Z">
+<meta property="article:modified_time" content="2022-01-16T02:53:08.371Z">
 <meta property="article:author" content="demonlover">
 <meta property="article:tag" content="线性代数">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s4.ax1x.com/2022/01/16/7tEmng.md.jpg">
 
 
 <link rel="canonical" href="http://example.com/2022/01/15/%E3%80%90%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%91LGV%E5%BC%95%E7%90%86/">
@@ -112,7 +115,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#lgv-%E5%BC%95%E7%90%86lindstrom-gessel-viennot-lemma"><span class="nav-number">1.</span> <span class="nav-text"> LGV 引理(Lindstrom-Gessel-Viennot lemma)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#lgv-%E5%BC%95%E7%90%86-%E5%86%85%E5%AE%B9"><span class="nav-number">1.1.</span> <span class="nav-text"> LGV 引理 内容</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#LGV-%E5%BC%95%E7%90%86-Lindstrom-Gessel-Viennot-lemma"><span class="nav-number">1.</span> <span class="nav-text">LGV 引理(Lindstrom-Gessel-Viennot lemma)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LGV-%E5%BC%95%E7%90%86-%E5%86%85%E5%AE%B9"><span class="nav-number">1.1.</span> <span class="nav-text">LGV 引理 内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%81%E6%98%8E"><span class="nav-number">1.2.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">例题</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -125,12 +128,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">20</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -200,7 +203,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-01-16 01:23:17" itemprop="dateModified" datetime="2022-01-16T01:23:17+08:00">2022-01-16</time>
+        <time title="Modified: 2022-01-16 10:53:08" itemprop="dateModified" datetime="2022-01-16T10:53:08+08:00">2022-01-16</time>
       </span>
 
   
@@ -217,16 +220,51 @@
     <div class="post-body" itemprop="articleBody">
         <p>本来没打算写的, 但是感觉老容易忘, 就还是写一下吧.</p>
 <span id="more"></span>
-<hr />
-<h2 id="lgv-引理lindstrom-gessel-viennot-lemma"><a class="markdownIt-Anchor" href="#lgv-引理lindstrom-gessel-viennot-lemma"></a> LGV 引理(Lindstrom-Gessel-Viennot lemma)</h2>
-<p>本文主要写对引理的阐述和证明.</p>
-<h3 id="lgv-引理-内容"><a class="markdownIt-Anchor" href="#lgv-引理-内容"></a> LGV 引理 内容</h3>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span></span></span></span> 是一个有限的带权有向无环图, 即每个顶点度是有限的, 不存在有向环(所以路径数是有限的).</li>
-<li>起点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A = \{a_1,\dots,a_n\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> , 终点 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy="false">{</mo><msub><mi>b</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>b</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">B = \{b_1,\dots,b_n\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> .</li>
-<li>每条边 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span> 有边权 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>w</mi><mi>e</mi></msub></mrow><annotation encoding="application/x-tex">w_e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> , 并假定属于某个交换环.</li>
+<hr>
+<h2 id="LGV-引理-Lindstrom-Gessel-Viennot-lemma"><a href="#LGV-引理-Lindstrom-Gessel-Viennot-lemma" class="headerlink" title="LGV 引理(Lindstrom-Gessel-Viennot lemma)"></a>LGV 引理(Lindstrom-Gessel-Viennot lemma)</h2><p>本文主要写对引理的阐述和证明.</p>
+<h3 id="LGV-引理-内容"><a href="#LGV-引理-内容" class="headerlink" title="LGV 引理 内容"></a>LGV 引理 内容</h3><ul>
+<li>$G$ 是一个有限的带权有向无环图, 即每个顶点度是有限的, 不存在有向环(所以路径数是有限的).</li>
+<li>起点 $A = \{a_1,\dots,a_n\}$ , 终点 $B = \{b_1,\dots,b_n\}$ .</li>
+<li>每条边 $e$ 有边权 $w_e$ , 并假定属于某个交换环.</li>
+<li>对于一个有向路径 $P$ , 定义 $\omega(P)$ 为路径上所有边权的积.</li>
+<li>对任意定点 $a,b$ , 定义 $e(a,b) = \sum_{P : a \rightarrow b}{\omega(P)}$ .</li>
 </ul>
-<p>to be continued!</p>
+<p>设矩阵</p>
+<script type="math/tex; mode=display">
+M = \left[\begin{array}{cccc}
+e(a_1,b_1) & e(a_1,b_2) & \cdots & e(a_1,b_n) \\
+e(a_2,b_1) & e(a_2,b_2) & \cdots & e(a_2,b_n) \\
+\vdots & \vdots & \ddots & \vdots \\
+e(a_n,b_1) & e(a_n,b_2) & \cdots & e(a_n,b_n)
+\end{array}\right]</script><p>从 $A$ 到 $B$ 的不相交路径 $P = (P_1,P_2,\dots,P_n)$ , $P_i$ 表示从 $a_i$ 到 $b_{\sigma(i)}$ 的一条路径, 其中 $\sigma$ 是一个排列(置换), 并且满足对任意 $i \not = j$ , $P_i$ 与 $P_j$ 没有公共点. 记 $\sigma(P)$ 表示 $P$ 对应的排列.</p>
+<p>引理说明, $M$ 的行列式是所有从 $A$ 到 $B$ 的不相交路径 $P = (P_1,P_2,\dots,P_n)$ 的带符号和. 其中符号指 $\sigma(P)$ 的逆序数的奇偶性, 即 $(-1)^{逆序数}$ , 记为 $\operatorname{sign}(\sigma(P))$ .</p>
+<script type="math/tex; mode=display">
+\operatorname{det}(M) = \sum_{P: A \rightarrow B}{\operatorname{sign}(\sigma(P)) \prod_{i=1}^n{\omega(P_i)}}</script><hr>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>对一组路径 $P$ , 若对任意 $i \not = j$ , $P_i$ 与 $P_j$ 无公共点, 则称 $P$ 是一组不相交路径, 否则为一组相交路径. 为了简便, 以下记相交路径为 $P^c$ , 不相交路径为 $P^u$ . 不做特殊说明时, $P$ 为一组平凡路径. 当带下表时, 指一条路径. 定义 $\omega(P) = \omega(P_1)\omega(P_2)\cdots \omega(P_n)$ .</p>
+<p>根据定义,</p>
+<script type="math/tex; mode=display">
+\operatorname{det}(M) = \sum_{\sigma \in S_n}{\operatorname{sign}(\sigma)\prod_{i=1}^n{e(a_i,b_{\sigma(i)})}} \\
+= \sum_{\sigma \in S_n}{\operatorname{sign}(\sigma) \prod_{i=1}^n{\sum_{P_i : a_i \rightarrow b_{\sigma(i)}}{\omega(P_i)}}}</script><p>$\prod_{i=1}^n{\sum_{P_i : a_i \rightarrow b_{\sigma(i)}}{\omega(P_i)}}$ 展开后对应所有排列为 $\sigma$ 的路径组 $P$ ,</p>
+<script type="math/tex; mode=display">
+\operatorname{det}(M) = \sum_{\sigma \in S_n}{\operatorname{sign}(\sigma)\sum_{P:(a_1,\dots,a_n) \rightarrow (b_{\sigma(1)},\dots,b_{\sigma(n)})}{\omega(P)}} \\
+= \sum_{P:A \rightarrow B}{\operatorname{sign}(\sigma(P)) \omega(P)}</script><p>现在形式已经相同, 只是 $P$ 的含义不同.</p>
+<script type="math/tex; mode=display">
+\operatorname{det}(M) = \sum_{P^u:A \rightarrow B}{\operatorname{sign}(\sigma(P^u)) \omega(P^u)}+\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(P^c)) \omega(P^c)}</script><p>故若引理成立, 则必有 $\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(P^c)) \omega(P^c)} = 0$ .</p>
+<p>设 $C$ 为所有 $P^c$ 构成的集合. 如果我们能构造一个双射关系 $f: C \rightarrow C$ , 满足对任意 $P^c \in C$ , $\omega(f(P^c)) = \omega(P^c)$ , $\operatorname{sign}(\sigma(f(P^c))) = -\operatorname{sign}(\sigma(P^c))$ .</p>
+<script type="math/tex; mode=display">
+\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(P^c)) \omega(P^c)} = \sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(f(P^c))) \omega(f(P^c))} \\
+\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(P^c)) \omega(P^c)} = \frac{1}{2}\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(P^c)) \omega(P^c)}+\frac{1}{2}\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(f(P^c))) \omega(f(P^c))} \\
+= \frac{1}{2}\sum_{P^c:A \rightarrow B}{\operatorname{sign}(\sigma(P^c)) \omega(P^c)}+\frac{1}{2}\sum_{P^c:A \rightarrow B}{-\operatorname{sign}(\sigma(P^c)) \omega(P^c)} \\
+= 0</script><p>确实可以构造:</p>
+<p>考虑 $P = (P_1,P_2,\dots,P_n)$ , $P \in C$ , 中找到最小的二元组 $(i,j)$ 满足 $P_i$ 和 $P_j$ 有交, 将相交之后的路径交换一下, 交换后得到 $P’$ . 显然有 $P’ \in C, P’ \not = P$ .</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/7tEmng"><img src="https://s4.ax1x.com/2022/01/16/7tEmng.md.jpg" alt="7tEmng.md.jpg"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/7tE390"><img src="https://s4.ax1x.com/2022/01/16/7tE390.md.jpg" alt="7tE390.md.jpg"></a></p>
+<p>边权没变, 边权属于交换环, 所以 $\omega(P)$ 不变, 交换了排列中的两个元素, 所以逆序数奇偶性改变, 所以 $\operatorname{sign}(\sigma(P’)) = -\operatorname{sign}(\sigma(P))$ .</p>
+<p>最后, 我们还注意到, 对于 $P’$ , 最小的二元组还是 $(i,j)$ , 那么 $f(P’) = P$ . 由此得证 $f$ 是双射.</p>
+<p>证毕.</p>
+<hr>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P6657">【模板】LGV 引理</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P7736">[NOI2021] 路径交点</a></p>
 
     </div>
 
